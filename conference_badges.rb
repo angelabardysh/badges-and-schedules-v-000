@@ -5,3 +5,11 @@ end
 def batch_badge_creator(attendees)
   attendees.map { |name| "Hello, my name is #{name}." }
 end
+
+def assign_rooms(attendees)
+  array = array.new
+  attendees.each_with_index do (name, index)
+    array << "Hello #{name}! You'll be assigned to room #{index+1}!"
+end
+  array
+end
